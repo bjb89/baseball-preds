@@ -4,7 +4,7 @@ library(tidyverse)
 batting <- read_csv('batting.csv')
 pitching <- read_csv('pitching.csv')
 
-pl <- player_list(batting)
+pl <- player_list(batting, 2009)
 
 # exclude players outside of the selected range
 batting <- batting[batting$player_id %in% pl,]

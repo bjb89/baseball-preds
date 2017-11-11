@@ -41,7 +41,7 @@ merge_years <- function(dat, merge_cols){
       v2 <- pdat[i,]
       v1 <<- merge_vectors(v1, v2, merge_cols)
     }
-    data.frame(v1)
+    v1
   })
 }
 
