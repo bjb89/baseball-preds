@@ -131,7 +131,7 @@ SELECT player_id,
 (h + double + triple*2 + hr*3) * (h + bb) / (ab + bb)^2 AS rc_per_ab
 FROM batting_rest_agg
 )
-TO '/Users/johollen/baseball-preds/yvals_avg_rc.csv';
+TO '/Users/johollen/baseball-preds/yvals_avg_rc.csv' WITH CSV HEADER DELIMITER ',';
 
 COPY batting_features TO '/Users/johollen/baseball-preds/features.csv' WITH CSV HEADER DELIMITER ',';
 COPY batting_agg TO '/Users/johollen/baseball-preds/batting_6agg.csv' WITH CSV HEADER DELIMITER ',';
